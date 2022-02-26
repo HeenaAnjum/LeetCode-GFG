@@ -1,7 +1,5 @@
 class Solution {
     public void nextPermutation(int[] nums) {
-        if(nums.length ==0 )
-              System.out.println(nums.length);
         if(nums.length ==0 || nums.length == 1) 
             System.out.println(nums[0]);
         int i=nums.length-2;
