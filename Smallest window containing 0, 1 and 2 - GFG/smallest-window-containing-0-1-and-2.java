@@ -30,15 +30,15 @@ class Solution {
         int result=Integer.MAX_VALUE;
         for(int i=0;i<S.length();i++){
          
-            if(S.charAt(i)=='0'){
+            if(S.charAt(i)=='0')
                 count_z=i;
-            }
-            else if(S.charAt(i)=='1'){
+            
+            else if(S.charAt(i)=='1')
                 count_o=i;
-            }
-        else{
+            
+        else
                 count_t=i;
-        }
+        
         
        if(count_z>-1 && count_o>-1 && count_t>-1){
             result = min(result, max(count_z,max(count_o,count_t)) - min(count_z,min(count_o,count_t))+1);
